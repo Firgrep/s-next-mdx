@@ -26,6 +26,12 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
+sphil-db-service-key.json
+commands.md
+
+# local exe files
+cloud-sql-proxy.exe
 
 # vercel
 .vercel
