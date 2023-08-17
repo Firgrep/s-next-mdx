@@ -8,10 +8,10 @@ Here is a list :P
 - Two
 - Three
 
-### ANOTHER TITLE
+```js
+const variable = "string"
 
-And here is the component:
-
-<TestC />
-
-End of file
+const function = (data) => {
+    return data
+}
+```

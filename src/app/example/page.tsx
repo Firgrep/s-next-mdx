@@ -4,6 +4,7 @@ import Link from "next/link";
 import Hello from '@/content/hello.mdx';
 import { TestC } from "@/components/TestC";
 
+// ! The .md formatting is lost when the mdx file is displayed 
 
 export default function Example() {
     return(

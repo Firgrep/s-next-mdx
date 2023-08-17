@@ -1,14 +1,25 @@
+import { SignedVideo } from '@/components/SignedVideo'
 import { TestD } from '@/components/TestD'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Suspense } from 'react'
 
 export default function Home() {
   return (
-    <main>
-      <Link href="/example">Example page</Link>
-
-      <TestD />
-    </main>
+    <>
+      <Link href="/example" className="bg-red-200 p-4 rounded-md hover:bg-red-500">Example page</Link>
+      <h1 className="text-2xl p-6">Public Video</h1>
+      <div>
+        <video controls poster="https://storage.googleapis.com/sphil-test-assets-bucket/showcase-poster.png">
+          <source src="https://storage.googleapis.com/sphil-test-assets-bucket/FN-showcase.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <Suspense>
+        <SignedVideo />
+      </Suspense>
+      
+      {/* <TestD /> */}
+    </>
   )
 }
 
